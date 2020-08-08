@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:id="@+id/outer_layout">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/parent_layout">
+
+
+        <TextView
+            android:id="@+id/meetupName"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="34dp"
+            android:text="Friends Gathering 2019"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:autoSizeMaxTextSize="18sp"
+            app:autoSizeMinTextSize="15sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"/>
+
+        <TextView
+            android:id="@+id/invitedText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingLeft="38dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/meetupName"
+            android:text="invitedby@gmail.com"
+            android:textSize="16sp"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeMinTextSize="14sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llExpandArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_below="@id/parent_layout"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/yesButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Accept"
+            android:textColor="@color/quantum_googblue400" />
+
+        <Button
+            android:id="@+id/noButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reject"
+            android:textColor="@color/quantum_googred300" />
+
+        <Button
+            android:id="@+id/infoButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="more info" />
+    </LinearLayout>
+
+
+</RelativeLayout>

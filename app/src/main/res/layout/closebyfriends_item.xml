@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:id="@+id/outer_layout">
+
+    <LinearLayout
+        android:id="@+id/llExpandArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/parent_layout"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/inviteButton_closeby"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="invite"
+            android:textColor="@color/quantum_googblue"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/parent_layout">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/friend_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/membername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/friendStatus"
+            android:layout_toRightOf="@+id/friend_image"
+            android:maxLines="1"
+            android:scrollbars="vertical"
+            android:text="Member@gmail.aaaaacom"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/friendStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:gravity="end"
+            android:text="32km away"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

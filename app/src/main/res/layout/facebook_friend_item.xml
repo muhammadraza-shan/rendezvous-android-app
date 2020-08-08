@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:padding="5dp"
+    android:id="@+id/outer_layout">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:id="@+id/parent_layout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/friend_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/requestname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/friend_image"
+            android:maxLines="1"
+            android:scrollbars="vertical"
+            android:text="Member@gmail.aaaaacom"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/llExpandArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/parent_layout"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/inviteButton_closeby"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Send Request"
+            android:textColor="@color/quantum_googblue"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

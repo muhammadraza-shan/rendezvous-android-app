@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="Chat" />
+        <item
+            android:id="@+id/nav_liveloc"
+            android:icon="@drawable/ic_location_searching_black_24dp"
+            android:title="Live Location" />
+        <item
+            android:id="@+id/nav_arrtimes"
+            android:icon="@drawable/ic_access_time_black_24dp"
+            android:title="Arrival Times" />
+    </group>
+
+    <item android:title="Manage">
+        <menu>
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/ic_account_box_black_24dp"
+                android:title="Account" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+</menu>

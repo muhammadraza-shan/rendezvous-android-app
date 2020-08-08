@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="Chat" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_loc"
+            android:title="Live Locations" />
+        <item
+            android:id="@+id/nav_members"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="Members" />
+        <item
+            android:id="@+id/nav_meetup_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Meetup Settings"
+            android:visible="false" />
+    </group>
+
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:paddingBottom="8dp"
+    android:animateLayoutChanges="true"
+    android:paddingTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/meetupnametextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="4dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/meetuptagstextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meetupnametextview"
+        android:layout_marginTop="8dp"
+        android:text="no tags"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/llExpandArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meetuptagstextview"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/yesButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="Join"
+            android:textAlignment="viewStart"
+            android:textColor="@color/quantum_googblue400"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/infoButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="more info"
+            android:textAlignment="viewStart"
+            android:textSize="14sp" />
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

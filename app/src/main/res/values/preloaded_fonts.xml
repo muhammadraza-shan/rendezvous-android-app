@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/actor</item>
+        <item>@font/allerta_stencil</item>
+        <item>@font/amarante</item>
+        <item>@font/average_sans</item>
+        <item>@font/droid_sans_bold</item>
+    </array>
+</resources>
